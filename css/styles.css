@@ -4,87 +4,174 @@ body{
 	background-color:white;
 	font-family:'Oxygen', sans-serif; 
 }
+
+/*navbar begin */
 #header-nav{
-	background-color: gray;
+	background-color: darkgray;
 	border-radius: 0;
-	border:1px solid black;
-	/*height:120px;*/
+	border:0;
+	height: 80px;
 }
 /*.navbar-brand{
 	padding-top: 25px;
-}
+}*/
 .navbar-brand h1{
-	font-family: 'lora',serif;
-	color:#557c3e;
+	
+	color:black;
 	font-size:1.5em;
 	text-transform: uppercase;
 	font-weight: bold;
-	text-shadow:1px 1px 1px #222;
-	margin-top: 0;
-	margin-bottom:0;
-	line-height: .75;
-}*/
-/*.c1{
-	background-color: white;
-	color:white;
+	/*line-height: .75;*/
 }
-*/
-/*.navbar-brand a:hover, .navbar-brand a:focus {
-	text-decoration: none;
+
+.navbar-brand p {
+	color:#000;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top:15px;
 }
-*/
 .navbar-brand p span{
 	vertical-align:middle;
 }
 #nav-list{
 	margin-top: 10px;
-	background-color: gray;
+	background-color: white;
 }
 #nav-list a{
 	color:black;
 	text-align: center;
-	/*background-color: white;*/
-	/*border:1px soild black;*/
 }
-#nav-list a:hover{
-	background:#E7E7E7;
-}
+
 #nav-list a span{
-	font-size:1.8em;
-	/*background-color: white;*/
-
+	font-size:1em;
 }
-
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-	border:1px solid #61122f;
+	border:1px solid gray;
 }
 .navbar-header button.navbar-toggle{
 	clear:both;
-	margin-top: -30px;
+	margin-top: -40px;
 }
+#call-btn > a{
+	font-size:1.5em;
+	display: block;
+	margin:0 20px;
+	padding:10px;
+	border:2px solid gray;
+	background-color: #f6b319;
+    color:#951c49;
+}	
 
-
+/*header part begin */
 .container .jumbotron{
-	margin-top: 30px;
+	margin-top: -30px;
 	padding:0;
-	background-color: darkgray;
+	background-color: white;
+	color:black;
+}
+.container .jumbotron h3{
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+#chicken-tiles, #sushi-tiles, #beef-tiles{
+	height:550px;
+	width: 100%;
+    overflow: hidden;
+}
+ #chicken-tiles{
+  
+  font-weight: bold;
+  font-size:1em;
+  position:relative;
+  background-color: gray;
+  margin-bottom:30px;
+
+
+}
+#chicken-tiles span h3{
+	text-align: center;
+	font-weight: bold;
+}
+#chicken-tiles p{
+	color:black;
+	overflow: hidden;
+	position: relative;
+	font-size: .8em;
+	font-weight: bold;
 }
 
 
+#sushi-tiles{
+  text-align: center;	
+  font-weight: bold;
+  font-size:1em;
+  position:relative;
+  background-color: gray;
+  margin-bottom:30px;
+
+}
+#sushi-tiles span h3{
+	text-align: center;
+	font-weight: bold;
+}
+
+#sushi-tiles p{
+	color:black;
+	overflow: hidden;
+	position: relative;
+	font-size: .8em;
+	font-weight: bold;
+}
+#beef-tiles{
+  text-align: center;	
+  font-weight: bold;
+  font-size:1em;
+  position:relative;
+  background-color:gray;
+  /*margin-bottom: :30px;*/
+
+}
+
+#beef-tiles span h3{
+	text-align: center;
+	font-weight: bold;
+}
+
+#beef-tiles p{
+	color:black;
+	overflow: hidden;
+	position: relative;
+	font-size: .8em;
+	font-weight: bold;
+}
+
+#chicken-tiles span, #sushi-tiles span, #beef-tiles span{
+	/*position: absolute;*/
+	bottom: 0;
+	right: 0;
+	width:100%;
+	text-align: center;
+	font-size:1em;
+	background-color:gray;
+	color: black;
+	opacity: .8;
+
+}
 
 
 @media (min-width: 1200px) {
 		.container .jumbotron{
 		/*background: url('/images/food-1200.jpg') no-repeat;*/
-		height: 675px;
+		height: 30%;
 		
 	}
 	
 }
 @media (min-width: 992px) and (max-width: 1199px){
       .container .jumbotron {
-		/*background: url('/images/big-1000.jpg') no-repeat;*/
-		height: 558px;
+		height: 30%;
 
 	}
 
@@ -93,8 +180,7 @@ body{
 }
 @media (min-width: 768px) and (max-width: 991px){
 		.container.jumbotron{
-		/*background: url('/images/big-1000.jpg') no-repeat;*/
-		height: 432px;
+		height: 30%;
 		
 	}
 
@@ -107,10 +193,7 @@ body{
 		height: 80px;
 	}
 	
-	/*.navbar-brand p img{
-		height:20px;
-	}
-*/}
+}
 
 
 @media (max-width: 479px) {
@@ -127,24 +210,3 @@ body{
 		width: 100%; 
 	}
 }
-
-#collapsale-nav a{    /*collapsed nav menu text */
-	font-size:1.2em;
-}
-
-#collapsale-nav a span {  /*collapsed nav menu glyph*/
-	font-size:1em;
-	margin-right:5px;
-}
-
-#call-btn > a{
-	font-size:1.5em;
-	display: block;
-	margin:0 20px;
-	padding:10px;
-	border:2px solid #fff;
-	background-color: #f6b319;
-    color:#951c49;
-}	
-
-
